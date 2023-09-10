@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <title>Cake Raffle</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><i class="material-icons">cake</i> Cake Raffle</h1>
+  </header>
+  
+  <div class="container">
+    <form id="entry-form">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" required>
+      <button type="submit">Enter</button>
+    </form>
+    
+    <div id="participants-list"></div>
+    
+    <div id="winner-display"></div>
+    
+    <div class="btn-group">
+      <button id="draw-button">Draw</button>
+      <button id="reset-button">Reset</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
