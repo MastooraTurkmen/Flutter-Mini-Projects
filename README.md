@@ -8,4 +8,4 @@
 
 + When you enter names inside the input, you can see who win by clicking **_Draw_** button
 
-![Alt text](image-1.png)
+![Alt text](./images/image-1.png)
