@@ -13,3 +13,5 @@ Head over to https://vitejs.dev/ to learn more about using vite
 
 
 + When you enter names inside the input, you can see who win by clicking **_Draw_** button
+
+![Alt text](image-1.png)
