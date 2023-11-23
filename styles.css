@@ -1,11 +1,9 @@
-/* Reset default styles */
 body, h1, form, input, button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Header styles */
 header {
   background-color: #ff4081;
   padding: 20px;
@@ -17,7 +15,6 @@ h1 {
   font-size: 32px;
 }
 
-/* Container styles */
 .container {
   max-width: 400px;
   margin: 20px auto;
@@ -26,7 +23,6 @@ h1 {
   border-radius: 4px;
 }
 
-/* Form styles */
 form {
   margin-bottom: 20px;
 }
@@ -50,7 +46,9 @@ input[type="text"] {
   margin-bottom: 16px;
 }
 
-button[type="submit"], #draw-button, #reset-button {
+button[type="submit"], 
+#draw-button, 
+#reset-button {
   width: 100%;
   padding: 8px;
   background-color: #ff4081;
@@ -70,20 +68,20 @@ button[type="submit"], #draw-button, #reset-button {
   background-color: #1367c0;
 }
 
-button[type="submit"]:hover, #draw-button:hover {
+button[type="submit"]:hover, 
+#draw-button:hover {
   background-color: #d5004e;
 }
 
-button[type="submit"]:focus, #draw-button:focus {
+button[type="submit"]:focus, 
+#draw-button:focus {
   outline: none;
 }
 
-/* Participants list styles */
 #participants-list {
   margin-bottom: 20px;
 }
 
-/* Winner display styles */
 #winner-display {
   text-align: center;
   font-size: 24px;
