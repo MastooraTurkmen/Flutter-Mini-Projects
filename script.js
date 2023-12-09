@@ -31,9 +31,3 @@ drawButton.addEventListener('click', function() {
     winnerDisplay.innerHTML = `<p>🎉 Winner: ${winner} 🍰</p>`;
   }
 });
-
-resetButton.addEventListener('click', function() {
-  winnerDisplay.innerHTML = ''; 
-  participantsList.innerHTML = '';
-  participants.length = 0;
-});
