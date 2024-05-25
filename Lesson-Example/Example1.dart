@@ -130,4 +130,33 @@ void main() {
   }
 
   print(grade);
+
+// Example
+  var number = 3;
+
+  switch (number) {
+    case 1:
+      print('One');
+      break;
+    case 2:
+      print("Two");
+      break;
+    case 3:
+      print("Three");
+      break;
+    default:
+      print("Other number");
+  }
+
+  String character = 'a';
+  switch (character) {
+    case 'a':
+      print("A");
+      break;
+    case 'b':
+      print("B");
+      break;
+    default:
+      print("Invalid letter");
+  }
 }
