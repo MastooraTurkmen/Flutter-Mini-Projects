@@ -1,0 +1,223 @@
+Question 1: Explain the difference between a while loop and a do-while loop. 
+Answer 1: A while loop checks the condition before executing or running the loop body, and the body doesn't run if the condition is initially false. The Syntax is below:
+
+while (condition){
+  // the code
+}
+
+On the other hand, a do-while loop checks the condition after running or executing the loop body. A do-while loop ensures the body runs at least once regardless of the initial condition. The Syntax is below:
+
+do {
+    // the code
+} while (condition);
+
+
+
+Question 2: Explain the difference between int, double, and String in Dart.  
+Answer 2: double, int, and String are data types in dart programming language. 
+
+1. int: int is an integer which represents whole numbers but without decimal or fractional.
+For example: int number = 90;
+
+2. double: It is floating point number which represents numbers with decimals or numbers that have fractional part. 
+For example: double weight = 3.202;
+
+3. String: Represents textual data, which is a sequence of characters or text. 
+For example: String myName = "Mastoora";
+
+
+Question 3: Describe the purpose of an if statement.
+Answer 3: In programming, the purpose of an if statement is to control the execution of code based on a false or true condition.
+If statement lets the program make decisions by executing a block of code only if a specified condition is true. 
+If statement helps us build sophisticated and interactive applications that can behave differently depending on various inputs and conditions. 
+
+
+Question 4: What is the purpose of a for loop, and when would you use it?
+Answer 4: A for loop is used to repeat a block of code a specific number of times or until a condition is met. 
+It is useful when you know how many times to iterate, such as iterating over a range of numbers or processing elements in a collection, 
+and to process elements of a list, array, or other.
+
+For example: 
+
+for (int i = 3; i <= 14; i++) {
+  print(i);
+}
+
+The Output:
+
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+
+Question 5: What is a variable in Dart, and how do you declare one?  
+Answer 5: In Dart, a variable (var) is a named storage location for a value. 
+Variables can store various types of data, for example, strings, numbers and objects. 
+We can declare a variable using 'var'.
+
+For example: var myName = "Mastoora";
+
+
+Question 6: The == operator is used to compare two values for equality. True or False 
+Answer 6: True
+
+
+Question 7: A do-while loop will execute the loop body at least once, even if the condition is initially false.
+True or False
+Answer 7: True
+
+
+Question 8: A for loop is always better than a while loop. True or False
+Answer 8: False
+
+
+Question 9: The switch statement can only be used with integers. True or False
+Answer 9: False
+
+
+Question 10: The if statement can be used to execute code based on a condition. True or False
+Answer 10: True
+
+Question 11: Which of the following is the correct way to declare a variable in Dart?  
+var name = "John";
+int name = "John";
+string name = "John";
+name = "John";
+Answer 11: var name = "John";
+
+
+Question 12: Which operator is used for addition in Dart?
+-
++
+*
+/
+
+Answer 12: +
+
+Question 13: What will be the output of the following code?  
+  int a = 10;
+  int b = 20;
+  if (a > b) {
+    print('a is greater');
+  } else {
+    print('b is greater');
+  }
+Answer: b is greater
+
+
+Question 14: Which loop is guaranteed to execute at least once?  
+for
+while
+do-while
+Both options b and c
+
+Answer 14: do-while
+
+
+Question 15: What is the output of the following switch statement?
+
+  int number = 2;
+  switch (number) {
+    case 1:
+      print('One');
+      break;
+    case 2:
+      print('Two');
+      break;
+    default:
+      print('Three');
+  }
+Answer 15: Two
+
+
+Question 16: Write a Dart program to declare a variable and assign it the value of 100. Print the variable.  
+Answer 16:   
+int myNumber = 100;
+print(myNumber);
+
+Output: 100
+
+
+Question 17: Write an if statement to check if a number is positive, negative, or zero. Print a message for each case.  
+Answer 17: 
+int firstNum = -22;
+
+  if (firstNum > 0) {
+    print("My firstNum is positive.");
+  } else if (firstNum < 0) {
+    print("My firstNum is negative.");
+  } else {
+    print("My firstNum is zero.");
+  }
+
+Output: My firstNum is negative.
+
+
+Question 18: Write a Dart program to print all odd numbers from 1 to 20 using a while loop.
+Answer 18: 
+  int oddNum = 1;
+
+  while (oddNum <= 20) {
+    if (oddNum % 2 != 0) {
+      print('Odd number is: $oddNum');
+    }
+    oddNum++;
+  }
+
+
+Output: 
+
+Odd number is: 1
+Odd number is: 3
+Odd number is: 5
+Odd number is: 7
+Odd number is: 9
+Odd number is: 11
+Odd number is: 13
+Odd number is: 15
+Odd number is: 17
+Odd number is: 19
+
+
+Question 19: Write a Dart program to print the multiplication table of 7 using a for loop.
+Answer 19: 
+  int myNum = 7;
+
+  for (int i = 1; i <= 10; i++) {
+    print("$myNum x $i = ${myNum * i}");
+  }
+
+Output:
+
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+
+
+Question 20: Write a Dart program to calculate the factorial of a given number using a for loop.  
+Answer 20: 
+  int givinNumber = 7;
+  int factorialNumber = 1;
+
+  for (int i = 1; i <= givinNumber; i++) {
+    factorialNumber *= i;
+  }
+  print("Factorial of $givinNumber is: $factorialNumber");
+
+Output: Factorial of 7 is: 5040
