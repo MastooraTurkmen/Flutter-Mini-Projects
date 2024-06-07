@@ -10,6 +10,7 @@ void main() {
 
   // Number
   List<int> numbers = [1, 2, 3, 4, 5];
-  numbers.addAll([2,3,4,55,7,8]);
-  print(numbers);
+  numbers.addAll([2, 3, 4, 55, 7, 8]);
+  numbers[0] = 9;
+  print(numbers.first);
 }
