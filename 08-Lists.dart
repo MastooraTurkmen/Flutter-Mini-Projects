@@ -9,7 +9,7 @@ void main() {
 
   print(myNumbers.first); // Print the first element
   print(myNumbers.last); // Print the last element
-  print(myNumbers[5]); // Print the first element
+  print(myNumbers[5]); // Print the element at the 5th index
 
   // list of student names
   List<String> studentsName = ["Ahmad", "Ali", "Kabir", "Fatema", "Zahra"];
