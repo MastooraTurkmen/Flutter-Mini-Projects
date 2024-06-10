@@ -19,4 +19,12 @@ void main() {
 
   print(studentsName);
 
+  studentsInUpperCase(studentsName);
+}
+
+// function that takes a list of student names
+void studentsInUpperCase(List<String> names) {
+  for (var name in names) {
+    print(name.toUpperCase()); //print in uppercase
+  }
 }
