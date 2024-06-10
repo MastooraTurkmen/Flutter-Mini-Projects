@@ -7,7 +7,6 @@ void main() {
   myNumbers.remove(5); // Remove the number 5
   print(myNumbers);
 
-  // Access Elements:
   print(myNumbers.first); // Print the first element
   print(myNumbers.last); // Print the last element
   print(myNumbers[5]); // Print the first element
@@ -16,7 +15,6 @@ void main() {
   List<String> studentsName = ["Ahmad", "Ali", "Kabir", "Fatema", "Zahra"];
   studentsName.addAll(['Lala', 'Mastoora']); // Add two students
   studentsName.remove('Kabir'); // Remove Kabir
-
   print(studentsName);
 
   studentsInUpperCase(studentsName);
