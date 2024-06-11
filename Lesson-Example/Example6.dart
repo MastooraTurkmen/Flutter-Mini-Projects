@@ -6,4 +6,8 @@ void main() {
     print('Student ${i + 1}: ${names[i]}');
   }
 
+  // For-In Loop
+  for (String name in names) {
+    print(name);
+  }
 }
