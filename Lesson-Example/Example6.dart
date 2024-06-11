@@ -10,4 +10,9 @@ void main() {
   for (String name in names) {
     print(name);
   }
+
+  // Foor Each Loop
+  names.forEach((name) {
+    print('Students: $name');
+  });
 }
