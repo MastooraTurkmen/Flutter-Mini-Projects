@@ -13,4 +13,19 @@ void main() {
   name.removeAll(['Ali', 'Rayn']);
   print(name.contains('Ali'));
   print(name);
+
+  // Set Operation: Union, Intersection, Difference
+
+  // Union
+  Set<int> setA = {1, 2, 3};
+  Set<int> setB = {2, 3, 4, 5};
+
+  Set<int> unionSet = setA.union(setB);
+  print(unionSet);
+
+  Set<int> intersectionSet = setA.intersection(setB);
+  print(intersectionSet);
+
+  Set<int> differenceSet = setA.difference(setB);
+  print(differenceSet);
 }
