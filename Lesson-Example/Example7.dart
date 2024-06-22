@@ -30,4 +30,16 @@ void main() {
   // Difference
   Set<int> differenceSet = setA.difference(setB);
   print(differenceSet);
+
+  // Iterating through a set
+
+  // For-In
+  for (int number in setA) {
+    print(number);
+  }
+
+  // For - Each
+  setB.forEach((num) {
+    print(num);
+  });
 }
