@@ -42,4 +42,28 @@ void main() {
   setB.forEach((num) {
     print(num);
   });
+
+  // Maps: Key-Value
+
+  var fruitPrices = {
+    // Key: Value
+    'apple': 20,
+    'banana': 30,
+    'cherry': 40
+  };
+
+  var fruits = Map();
+  fruits['Orange'] = 80;
+  fruits['Mango'] = 50;
+
+  // Updating values
+  fruits['Mango'] = 25;
+
+  print(fruitPrices);
+  print(fruits);
+
+  // Iteration
+  fruitPrices.forEach((key, value) {
+    print('$key: $value');
+  });
 }
