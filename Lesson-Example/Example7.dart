@@ -1,7 +1,7 @@
 void main() {
   // Set
   // First Methode
-  Set<String> nameSet = {'Ahmad', 'Fatema', 'Ali', 'Ali'};
+  Set<String> nameSet = {'Ahmad', 'Fatema', 'Ali'};
   print(nameSet);
 
   // Second Methode
