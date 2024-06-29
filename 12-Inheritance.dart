@@ -1,21 +1,12 @@
 void main() {
   // Instantiate Car object
-  Car myCar = Car();
-  myCar.brand = 'Tesla';
-  myCar.year = 2023;
-  myCar.numberOfDoors = 4;
+  Car myCar = Car('Tesla', 2023, 4);
 
   // Instantiate Motorcycle object
-  Motorcycle myMotorcycle = Motorcycle();
-  myMotorcycle.brand = 'Kawasaki';
-  myMotorcycle.year = 2020;
-  myMotorcycle.hasSidecar = false;
+  Motorcycle myMotorcycle = Motorcycle('Kawasaki', 2020, false);
 
-  //Instantiate Truck object
-  Truck myTruck = Truck();
-  myTruck.brand = 'Nissan';
-  myTruck.year = 2022;
-  myTruck.loadCapacity = 50;
+  // Instantiate Truck object
+  Truck myTruck = Truck('Nissan', 2022, 50.0);
 
   // Call their methods
   myCar.move();
@@ -32,6 +23,8 @@ class Vehicle {
   String? brand;
   int? year;
 
+  Vehicle(this.brand, this.year);
+
   void move() {
     print('Started to move.');
   }
@@ -40,13 +33,17 @@ class Vehicle {
 class Car extends Vehicle {
   int? numberOfDoors;
 
+  Car(String brand, int year, this.numberOfDoors) : super(brand, year);
+
   void drive() {
-    print('My car Drives.');
+    print('My car drives.');
   }
 }
 
 class Motorcycle extends Vehicle {
   bool? hasSidecar;
+
+  Motorcycle(String brand, int year, this.hasSidecar) : super(brand, year);
 
   void run() {
     print('My bike is running.');
@@ -56,14 +53,16 @@ class Motorcycle extends Vehicle {
 class Truck extends Vehicle {
   double? loadCapacity;
 
+  Truck(String brand, int year, this.loadCapacity) : super(brand, year);
+
   void checkCapacity() {
     if (loadCapacity != null) {
       if (loadCapacity! < 40) {
-        print('My vehicle with medium capacity.');
+        print('My vehicle has medium capacity.');
       } else if (loadCapacity! <= 60) {
-        print('My vehicle with large capacity.');
+        print('My vehicle has large capacity.');
       } else {
-        print('My vehicle with extra-large capacity.');
+        print('My vehicle has extra-large capacity.');
       }
     }
   }
