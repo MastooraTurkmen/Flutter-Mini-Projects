@@ -1,6 +1,6 @@
 void main() {
   // Create a set of unique names and perform various operations on it.
-  Set<String> peopleNames = {"Alice", "Bob", "Charlie", "Alice", "David"};
+  Set<String> peopleNames = {"Alice", "Bob", "Charlie", "Aliceb", "David"};
   peopleNames.add('Eve'); //Add a new name "Eve" to the set.
   peopleNames.remove('Bob'); //Remove the name "Bob" from the set.
   peopleNames.contains('Charlie'); //Check if name "Charlie" exists in the set.
